@@ -1,9 +1,3 @@
-"""
-Example usage of the Binance Futures Trading Bot.
-
-This script demonstrates how to use the trading bot programmatically
-(not just via CLI). Useful for integrating into larger systems.
-"""
 
 import os
 from bot.client import BinanceFuturesClient
