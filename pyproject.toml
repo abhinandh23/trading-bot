@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools-scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "binance-futures-trading-bot"
+version = "1.0.0"
+description = "Trading bot for Binance Futures Testnet (USDT-M) with clean structure, logging, and error handling"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "Trading Bot Team", email = "info@example.com"}
+]
+keywords = ["binance", "futures", "trading", "bot", "testnet"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+dependencies = [
+    "requests>=2.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black>=21.0",
+    "flake8>=3.9",
+    "mypy>=0.910",
+]
+
+[project.urls]
+Homepage = "https://github.com/example/binance-futures-trading-bot"
+Repository = "https://github.com/example/binance-futures-trading-bot.git"
+Issues = "https://github.com/example/binance-futures-trading-bot/issues"
+
+[tool.setuptools]
+packages = ["bot"]
+
+[tool.black]
+line-length = 100
+target-version = ["py36", "py37", "py38"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.6"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
