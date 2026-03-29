@@ -1,16 +1,3 @@
-"""
-Validation script to verify the trading bot setup.
-
-Run this script to check:
-- Python environment
-- Dependencies installed
-- Credentials configured
-- API connectivity
-- Code structure
-
-Usage:
-    python validate.py
-"""
 
 import sys
 import os
