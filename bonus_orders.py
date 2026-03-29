@@ -1,9 +1,4 @@
-"""
-BONUS: Stop-Limit Order Support
 
-This module demonstrates extended order types beyond basic MARKET and LIMIT.
-Uncomment and integrate into the main CLI to use.
-"""
 
 import logging
 from typing import Any, Dict
